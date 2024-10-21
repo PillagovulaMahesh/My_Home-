@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home - Makerble</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Makerble</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard">
+            <h2>Dashboard Overview</h2>
+            <div class="stats">
+                <div class="stat-card">Active Projects: <span id="project-count">5</span></div>
+                <div class="stat-card">Recent Activities: <span id="activity-count">10</span></div>
+            </div>
+            <button onclick="openModal()">Create New Story</button>
+        </section>
+        <section class="collapsible-sections">
+            <h2>My Projects</h2>
+            <div class="collapsible" onclick="toggleSection('project-list')">View Projects</div>
+            <div id="project-list" class="content hidden">
+                <!-- Project items will be listed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Makerble. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
